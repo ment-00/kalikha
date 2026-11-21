@@ -14,19 +14,19 @@ const values = [
 const team = [
   {
     name: 'Angelika Juan',
-    photo: '/images/team/angelika-juan.jpg',
+    photo: `${import.meta.env.BASE_URL}images/team/angelika-juan.jpg`,
     role: 'Co-Founder · Brand & Marketing',
     section: 'BSIT 3 - A',
   },
   {
     name: 'John Clement Navarro',
-    photo: '/images/team/john-clement-navarro.jpg',
+    photo: `${import.meta.env.BASE_URL}images/team/john-clement-navarro.jpg`,
     role: 'Co-Founder · Website & Operations',
     section: 'BSIT 3 - A',
   },
   {
     name: 'Raven Glaze Moldes',
-    photo: '/images/team/raven-glaze-moldes.jpg',
+    photo: `${import.meta.env.BASE_URL}images/team/raven-glaze-moldes.jpg`,
     role: 'Co-Founder · Products & Sourcing',
     section: 'BSIT 3 - A',
   },

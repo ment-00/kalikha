@@ -90,3 +90,22 @@ If a file name is mistyped, the "Photo coming soon" placeholder shows instead of
 ## Video
 
 The commercial is `public/videos/kalikha-commercial.mp4`, and the image shown before it plays is `kalikha-commercial-poster.jpg`. To use a different video, replace these files and keep the same names.
+
+## Deploying to GitHub Pages
+
+The project is already set up for GitHub Pages: it uses relative paths (`base: './'` in `vite.config.js`) and `HashRouter`, so page addresses look like `/#/shop` and refreshing any page works.
+
+```bash
+git init
+git add .
+git commit -m "KALIKHA online store"
+git branch -M main
+git remote add origin https://github.com/<your-username>/kalikha.git
+git push -u origin main
+npm run deploy
+```
+
+Then on GitHub go to **Settings → Pages**, set **Source** to *Deploy from a branch*, choose the **gh-pages** branch and the **/(root)** folder, and click **Save**.
+The site will be at `https://<your-username>.github.io/kalikha/`.
+
+To publish later changes, run `git add .`, `git commit -m "your message"`, `git push`, then `npm run deploy`.

@@ -7,7 +7,10 @@ export default function ProductImg({ product, alt, ...rest }) {
       src={product.image}
       alt={alt ?? product.name}
       onError={(e) => {
-        if (!e.currentTarget.src.endsWith(PLACEHOLDER_IMAGE)) e.currentTarget.src = PLACEHOLDER_IMAGE
+        // Swap to the placeholder only once, so a missing placeholder can't loop
+        if (e.currentTarget.dataset.fallback) return
+        e.currentTarget.dataset.fallback = 'true'
+        e.currentTarget.src = PLACEHOLDER_IMAGE
       }}
       {...rest}
     />

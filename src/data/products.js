@@ -8,7 +8,7 @@
 // 4. Set featured: true to also show it on the Home page.
 // A new category name is added to the Shop filters automatically.
 
-const IMAGE_DIR = '/images/products/'
+const IMAGE_DIR = `${import.meta.env.BASE_URL}images/products/`
 export const PLACEHOLDER_IMAGE = `${IMAGE_DIR}placeholder.svg`
 
 // Order of the Shop filter buttons. Any category not listed here is added at the end.

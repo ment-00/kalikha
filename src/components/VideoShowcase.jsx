@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { FiPlay } from 'react-icons/fi'
 
-const VIDEO_SRC = '/videos/kalikha-commercial.mp4'
-const POSTER_SRC = '/videos/kalikha-commercial-poster.jpg'
+const VIDEO_SRC = `${import.meta.env.BASE_URL}videos/kalikha-commercial.mp4`
+const POSTER_SRC = `${import.meta.env.BASE_URL}videos/kalikha-commercial-poster.jpg`
 
 export default function VideoShowcase() {
   const videoRef = useRef(null)
